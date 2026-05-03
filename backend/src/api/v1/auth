@@ -1,0 +1,24 @@
+from fastapi import APIRouter, HTTPException
+from src.schemas.user_schema import UserCreate
+
+router = APIRouter()
+
+# ✅ REGISTER
+@router.post("/register")
+def register(user: UserCreate):
+    try:
+        return {
+            "message": "User registered successfully",
+            "email": user.email
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ✅ LOGIN
+@router.post("/login")
+def login(user: UserCreate):
+    if user.email == "test@gmail.com" and user.password == "123456":
+        return {"message": "Login successful"}
+    else:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
