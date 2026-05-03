@@ -188,3 +188,14 @@ Email: test@gmail.com
 ✔ Study FastAPI
 ✔ Build React UI
 ✔ Connect Backend
+
+👨‍💻 Author
+
+Ankita Baddoli
+Python Full Stack Developer
+
+⭐ Future Improvements
+Docker deployment
+PostgreSQL integration
+CI/CD pipeline
+Cloud deployment (Render / AWS)
