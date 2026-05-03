@@ -172,6 +172,15 @@ http://localhost:5173
 🔐 Login Successful
 Welcome test@gmail.com
 📝 Register Output
+
+
+📡 API Endpoints
+Auth
+POST /auth/register
+POST /auth/login
+Tasks
+GET /tasks/
+POST /tasks/
 ✅ User registered successfully
 Email: test@gmail.com
 📋 Task Output
